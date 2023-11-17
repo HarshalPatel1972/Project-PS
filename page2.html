@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball Partner Question</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        animation: changeBgColor 5s infinite;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, #ff00cc, #3333ff);
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%; /* Use the full width of the container */
+        box-sizing: border-box; /* Include padding and border in the width */
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 48px;
+        font-family: "Pacifico", cursive;
+        animation: fadeIn 2s ease-in-out;
+      }
+
+      p {
+        color: #fff;
+        font-size: 24px;
+        font-family: "Verdana", sans-serif;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      /* Styles for Yes button */
+      .yes-button {
+        background-color: #4caf50;
+        border: 3.5px solid rgb(252, 255, 102);
+      }
+
+      .yes-button:hover {
+        box-shadow: 0 5px 30px 0 #4caf50 inset, 0 5px 30px 0 #4caf50,
+          0 5px 30px 0 #4caf50 inset, 0 5px 30px 0 #4caf50;
+        text-shadow: 0 0 5px #4caf50, 0 0 5px #4caf50;
+      }
+
+      /* Styles for No button */
+      .no-button {
+        background-color: #ff3333;
+        border: 3.5px solid rgb(252, 255, 102);
+      }
+
+      .no-button:hover {
+        box-shadow: 0 5px 30px 0 #ff3333 inset, 0 5px 30px 0 #ff3333,
+          0 5px 30px 0 #ff3333 inset, 0 5px 30px 0 #ff3333;
+        text-shadow: 0 0 5px #ff3333, 0 0 5px #ff3333;
+      }
+
+      /* Styles for Think button */
+      .think-button {
+        background-color: #ff00cc;
+        border: 3.5px solid rgb(252, 255, 102);
+      }
+
+      .think-button:hover {
+        box-shadow: 0 5px 30px 0 #ff00cc inset, 0 5px 30px 0 #ff00cc,
+          0 5px 30px 0 #ff00cc inset, 0 5px 30px 0 #ff00cc;
+        text-shadow: 0 0 5px #ff00cc, 0 0 5px #ff00cc;
+      }
+
+      .button {
+        position: relative;
+        text-align: center;
+        height: 85px;
+        width: 150px;
+        padding: 20px;
+        font-size: 12px;
+        color: rgb(220, 245, 235);
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: 0.5s;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes changeBgColor {
+        0% {
+          background-color: #ff00cc; /* Start color from linear gradient in .container */
+        }
+        50% {
+          background-color: #654ea3; /* Middle color from linear gradient in .container */
+        }
+        100% {
+          background-color: #3333ff; /* End color from linear gradient in .container */
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+
+        .button {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Temp.....</h1>
+      <p>Here's a short description of the ......:</p>
+      <div class="button-container">
+        <button class="button yes-button" onclick="location.href='yes.html'">
+          Yes
+        </button>
+        <button class="button no-button" onclick="location.href='no.html'">
+          No
+        </button>
+        <button
+          class="button think-button"
+          onclick="location.href='think.html'"
+        >
+          I will think about it
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
