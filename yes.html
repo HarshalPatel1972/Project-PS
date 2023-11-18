@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        animation: changeBgColor 5s infinite;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, #ff00cc, #3333ff);
+      }
+
+      h1 {
+        color: rgb(223, 160, 77);
+        font-size: 36px;
+        animation: fadeIn 2s ease-in-out, fadeOut 2s ease-in-out 3s;
+        font-family: "Dancing Script", cursive; /* Changed font to Dancing Script */
+      }
+
+      p {
+        color: rgb(208, 186, 211);
+        font-size: 18px;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      .button {
+        position: relative;
+        text-align: center;
+        width: 150px;
+        padding: 20px;
+        font-size: 16px; /* Adjusted font size to match the button in the original code */
+        color: rgb(220, 245, 235);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif, "Lucida Sans", Arial, sans-serif;
+        font-weight: 400;
+        border: 3.5px solid rgb(214, 214, 65);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: 0.3s; /* Adjusted transition time to match the original code */
+        background-color: rgb(234, 53, 53);
+      }
+
+      .button:hover {
+        background-color: transparent; /* Set background color to transparent on hover */
+        border: 3.5px solid transparent; /* Set border to transparent on hover */
+        box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white,
+          0 5px 30px 0 white inset, 0 5px 30px 0 white;
+        text-shadow: 0 0 5px rgb(19, 161, 95), 0 0 5px rgb(19, 161, 95);
+        font-size: 14px; /* Doubled font size on hover */
+      }
+
+      /* Style for the Instagram ID link */
+      p a {
+        color: hotpink; /* Change the color to hot pink */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Make it bold */
+      }
+
+      @keyframes changeBgColor {
+        0% {
+          background-color: #ff00cc; /* Start color from linear gradient in .container */
+        }
+        50% {
+          background-color: #654ea3; /* Middle color from linear gradient in .container */
+        }
+        100% {
+          background-color: #3333ff; /* End color from linear gradient in .container */
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Styles */
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .button {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Great, Prabhleen!</h1>
+      <p>
+        Thank you for agreeing to be my ball partner. I'm excited to have you on
+        board!
+      </p>
+      <!-- Add a new paragraph for Instagram ID -->
+      <p>
+        You can reach me on Instagram at
+        <a
+          href="https://www.instagram.com/sehajpreet_singh_999/?hl=en"
+          target="_blank"
+        >
+          @sehajpreet_singh_999
+        </a>
+        . Feel free to DM me if you have any questions!
+      </p>
+      <div class="button" onclick="location.href='page3.html'">Continue</div>
+    </div>
+  </body>
+</html>
