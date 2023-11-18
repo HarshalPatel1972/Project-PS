@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A simple welcome page" />
+    <title>Welcome</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        font-family: "Great Vibes", cursive;
+        text-align: center;
+        animation: changeBgColor 5s infinite;
+      }
+
+      @keyframes changeBgColor {
+        0% {
+          background-color: #ff00cc; /* Start color from linear gradient in .container */
+        }
+        50% {
+          background-color: #654ea3; /* Middle color from linear gradient in .container */
+        }
+        100% {
+          background-color: #3333ff; /* End color from linear gradient in .container */
+        }
+      }
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+        width: 193vh;
+        background-image: linear-gradient(to bottom right, #ff00cc, #3333ff);
+        animation: changeBgColor 5s infinite; /* Add animation to .container */
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 48px;
+        font-family: "Great Vibes", serif, cursive;
+        text-shadow: 0 0 50px rgba(206, 199, 199, 0.5);
+        animation: fadeIn 2s ease-in-out, zoomIn 2s ease-in-out;
+        color: rgb(227, 160, 17);
+      }
+
+      p {
+        color: #ffffff;
+        font-size: 24px;
+        font-family: "Lobster", sans-serif;
+        animation: slideIn 2s ease-in-out;
+        color: #d884c8;
+      }
+
+      .button {
+        position: relative;
+        text-align: center;
+        width: 150px;
+        padding: 20px;
+        font-size: 12px;
+        color: rgb(188, 207, 199);
+        font-family: Calibri, "Trebuchet MS", sans-serif, "Lucida Sans", Arial,
+          sans-serif;
+        font-weight: 400;
+        border: 3.5px solid rgb(214, 214, 65);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: 0.5s;
+        background-color: rgb(234, 53, 53);
+      }
+
+      .button:hover {
+        box-shadow: 0 5px 30px 0 rgb(104, 229, 216) inset,
+          0 5px 30px 0 rgb(104, 229, 216), 0 5px 30px 0 rgb(104, 229, 216) inset,
+          0 5px 30px 0 rgb(104, 229, 216);
+        text-shadow: 0 0 5px rgb(104, 229, 216), 0 0 5px rgb(104, 229, 216);
+        font-size: 14px; /* Doubled font size on hover */
+        background-color: transparent; /* Set background color to transparent on hover */
+        border: none; /* Remove border on hover */
+        color: rgb(9, 236, 104);
+      }
+
+      .gif {
+        position: absolute;
+        width: 100px; /* Adjust the size as needed */
+        height: 100px; /* Adjust the size as needed */
+      }
+
+      .left-gif {
+        left: 250px; /* Adjust the distance from the button */
+        top: 600px; /* Adjust the distance from the top */
+      }
+
+      .right-gif {
+        right: 250px; /* Adjust the distance from the button */
+        top: 600px; /* Adjust the distance from the top */
+      }
+
+      .left-gif2 {
+        left: 250px; /* Adjust the distance from the button */
+        top: 400px; /* Adjust the distance from the top */
+      }
+
+      .right-gif2 {
+        right: 250px; /* Adjust the distance from the button */
+        top: 400px; /* Adjust the distance from the top */
+      }
+
+      .left-gif3 {
+        left: 250px; /* Adjust the distance from the button */
+        top: 200px; /* Adjust the distance from the top */
+      }
+
+      .right-gif3 {
+        right: 250px; /* Adjust the distance from the button */
+        top: 200px; /* Adjust the distance from the top */
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes zoomIn {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes changeBgColor {
+        0% {
+          background-color: #ff00cc; /* Start color from linear gradient in code 2 */
+        }
+        50% {
+          background-color: #654ea3; /* Middle color from linear gradient in code 2 */
+        }
+        100% {
+          background-color: #3333ff; /* End color from linear gradient in code 2 */
+        }
+      }
+
+      /* Responsive Styles */
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 36px;
+        }
+        p {
+          font-size: 18px;
+        }
+        .button {
+          font-size: 18px;
+        }
+      }
+    </style>
+    <script>
+      function goToPage2() {
+        window.location.href = "page2.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Replace these URLs with your actual GIF URLs -->
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Left GIF"
+        class="gif left-gif"
+        height="200"
+      />
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Left GIF"
+        class="gif left-gif2"
+        height="200"
+      />
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Left GIF"
+        class="gif left-gif3"
+        height="200"
+      />
+      <h1>Hello, Prabhleen!</h1>
+      <img
+        src="https://i.pinimg.com/originals/87/0d/8e/870d8e4ebebdb53af3aae87198cdddf8.gif"
+        alt="Pros GIF"
+        width="200"
+        height="200"
+      />
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Right GIF"
+        class="gif right-gif"
+        height="200"
+      />
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Right GIF"
+        class="gif right-gif2"
+        height="200"
+      />
+      <img
+        src="https://i.giphy.com/media/1oPXuHfr7oA5MsesEl/giphy.webp"
+        alt="Right GIF"
+        class="gif right-gif3"
+        height="200"
+      />
+      <p>
+        I'm delighted that you've reached this point. <br />Take your time,
+        explore, and when you're ready to continue, <br />press the button
+        below.
+      </p>
+      <div class="button" onclick="goToPage2()">
+        <b>CONTINUE!</b>
+      </div>
+    </div>
+  </body>
+</html>

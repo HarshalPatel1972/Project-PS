@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Take Your Time</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        animation: changeBgColor 5s infinite;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, #ff00cc, #3333ff);
+      }
+
+      h1 {
+        color: rgb(223, 160, 77);
+        font-size: 36px;
+        animation: fadeIn 2s ease-in-out;
+        font-family: "Dancing Script", cursive; /* Added font-family for Dancing Script */
+      }
+
+      p {
+        color: rgb(208, 186, 211);
+        font-size: 18px;
+        animation: slideIn 2s ease-in-out;
+      }
+
+      .button {
+        position: relative;
+        text-align: center;
+        width: 150px;
+        padding: 20px;
+        font-size: 16px;
+        color: rgb(220, 245, 235);
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif, "Lucida Sans", Arial, sans-serif;
+        font-weight: 400;
+        border: 3.5px solid rgb(214, 214, 65);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        cursor: pointer;
+        border-radius: 1px;
+        transition: 0.5s;
+        background-color: rgb(234, 53, 53);
+      }
+
+      .button:hover {
+        background-color: transparent;
+        border: 3.5px solid transparent;
+        box-shadow: 0 5px 30px 0 white inset, 0 5px 30px 0 white,
+          0 5px 30px 0 white inset, 0 5px 30px 0 white;
+        text-shadow: 0 0 5px rgb(19, 161, 95), 0 0 5px rgb(19, 161, 95);
+        font-size: 14px;
+      }
+
+      @keyframes changeBgColor {
+        0% {
+          background-color: #ff00cc;
+        }
+        50% {
+          background-color: #654ea3;
+        }
+        100% {
+          background-color: #3333ff;
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .button {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Take your time, Prabhleen!</h1>
+      <p>Feel free to think about it and let me know whenever you're ready.</p>
+      <div class="button" onclick="location.href='page3.html'">Continue</div>
+    </div>
+  </body>
+</html>
